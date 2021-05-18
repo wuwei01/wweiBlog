@@ -1,0 +1,13 @@
+# DataSource Config
+server:
+  port: 8082
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: haosql
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: redis:6379
