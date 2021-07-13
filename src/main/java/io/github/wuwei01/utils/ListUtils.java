@@ -1,18 +1,18 @@
 package io.github.wuwei01.utils;
 
-import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.apache.commons.lang3.time.DateUtils;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.ImmutableTriple;
 
+import java.text.ParseException;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class ListUtils {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         // 如何把list集合拼接成以逗号分隔的字符串 a,b,c
         List<String> list = Arrays.asList("a", "b", "c");
         // 第一种方法，可以用stream流
